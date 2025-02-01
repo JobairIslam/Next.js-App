@@ -7,7 +7,7 @@ const accordionData = [
   { id: "item-2", question: "How do I use Next.js?", answer: "You can use Next.js by creating a new project with `create-next-app`." },
   { id: "item-3", question: "What is Radix UI?", answer: "Radix UI provides accessible, unstyled components for building design systems." },
   { id: "item-4", question: "How to style in Tailwind CSS?", answer: "Tailwind CSS is a utility-first CSS framework." },
-  { id: "item-5", question: "What is Server-side Rendering?", answer: "SSR is a technique where the page is generated on the server per request." }
+  { id: "item-5", question: "What is the Server-side Rendering?", answer: "SSR is a technique where the page is generated on the server per request." }
 ];
 
 
