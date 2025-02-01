@@ -1,6 +1,9 @@
 "use client";
 import React from 'react'
+import Image from 'next/image';
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+import { ThreeDCardDemo } from "@/components/Card";
+
 
 const accordionData = [
   { id: "item-1", question: "What is Next.js?", answer: "Next.js is a React framework for production." },
@@ -13,8 +16,8 @@ const accordionData = [
 
 export default function page() {
   return (
-    <div className='container mx-auto max-w-[500px]'>
-      <div className='accordian'>
+    <div className='container'>
+      <div className='accordian pb-8 max-w-[500px]  mx-auto'>
          <Accordion type="single" collapsible>
         {accordionData.map((item) => (
           <AccordionItem key={item.id} value={item.id}>
@@ -24,6 +27,14 @@ export default function page() {
         ))}
       </Accordion>
       </div>
+       <div className="grid grid-cols-1  lg:grid-cols-2 gap-3 p-6">
+      <ThreeDCardDemo />
+      <ThreeDCardDemo />
+      <ThreeDCardDemo />
+      <ThreeDCardDemo />
+      
     </div>
+    </div>
+    
   )
 }
